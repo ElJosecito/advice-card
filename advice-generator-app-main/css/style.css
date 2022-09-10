@@ -65,6 +65,16 @@ body #main .card #btn:hover {
   -webkit-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82, 255, 168, 0);
   -moz-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82, 255, 168, 0);
 }
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: hsl(218deg, 23%, 16%);
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+body .attribution a {
+  color: hsl(150deg, 100%, 66%);
+}
 
 @media screen and (max-width: 375px) {
   #main {

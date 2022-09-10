@@ -89,11 +89,14 @@ body{
         }
     }
 
+    .attribution { font-size: 11px; text-align: center; background-color: $DarkBlue; color: white; font-family: 'Manrope', sans-serif;}
+    .attribution a { color: $NeonGreen; }
+
 }
 
 
 //The responsive is not listening, i don't know why, i think this is the way, 
-//but only the responsive happens in the main id, an only for padding. 
+//but only the responsive happens in the main id, an only for padding.
 
 @media screen and (max-width: 375px) {
     #main{
@@ -105,7 +108,6 @@ body{
         .card{
             width: 300px;
             height: 400px;
-
             background-color: red;
         }
     }
