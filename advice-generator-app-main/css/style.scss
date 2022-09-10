@@ -9,106 +9,101 @@ $DarkBlue: hsl(218, 23%, 16%);
 
 
 
-body{
-    height: 100vh;
     #main{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $DarkBlue;
-
-        .card{
-            width: 26.25rem;
-            height: 16.875rem;
-            border-radius: 0.9375rem;
-            background-color: $DarkGrayishBlue;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem;
-
-
-            .advice{
-                color: $NeonGreen;
-                font-family: 'Manrope', sans-serif;
-                margin-top: 1.875rem;
-                font-weight: lighter;
-                letter-spacing: 0.1875rem;
-                margin-bottom: 0;
-                
-            }
-
-            #paragraph{
-                text-align: center;
-                font-size: 1.6875rem;
-                font-family: 'Manrope', sans-serif;
-                color: $LightCyan;
-                font-weight: 800;
-                margin-top: 0;
-            }
-
-
-            picture{
-                display: flex;
-                justify-content: center;
-                margin-bottom: 2.5rem;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-
-                
-            }
-
-            #btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 3.125rem;
-                height: 3.125rem;
-                border-radius: 50%;
-                border-style: none;
-                outline: none;
-                position: absolute;
-                z-index: 10;
-                top: 71vh;
-                transition: .5s ease-in-out;
-                background-color: $NeonGreen;
-                
-            }
-
-            #btn:hover{
-                box-shadow: 0rem 0rem 1rem -10.875rem rgba(82,255,168,0);
-                -webkit-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82,255,168,0);
-                -moz-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82,255,168,0);
-            }
-        }
     }
 
-    .attribution { font-size: 11px; text-align: center; background-color: $DarkBlue; color: white; font-family: 'Manrope', sans-serif;}
-    .attribution a { color: $NeonGreen; }
+    .card{
+        width: 26.25rem;
+        height: 16.875rem;
+        border-radius: 0.9375rem;
+        background-color: $DarkGrayishBlue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem;
+        position: relative;   
+    }
 
-}
+    .advice{
+        color: $NeonGreen;
+        font-family: 'Manrope', sans-serif;
+        margin-top: 1.875rem;
+        font-weight: lighter;
+        letter-spacing: 0.1875rem;
+        margin-bottom: 0;
+        
+    }        
+
+    #paragraph{
+        text-align: center;
+        font-size: 1.6875rem;
+        font-family: 'Manrope', sans-serif;
+        color: $LightCyan;
+        font-weight: 800;
+        margin-top: 20px;
+    }      
+
+
+    picture{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    }    
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        border-style: none;
+        outline: none;
+        transition: .5s ease-in-out;
+        background-color: $NeonGreen;
+        position: absolute;
+        top: 92%;
+        left: 44.6%;
+        
+    }
+
+    .btn:hover{
+        cursor: pointer;
+        box-shadow: 0rem 0rem 1rem 0.625rem rgba(82,255,168,1);
+        -webkit-box-shadow: 0rem 0rem 1rem 0.625rem rgba(82,255,168,1);
+        -moz-box-shadow: 0rem 0rem 1rem 0.625rem rgba(82,255,168,1);
+    }       
+        
+    .attribution { font-size: 0.6875rem; text-align: center; background-color: $DarkBlue; color: white; font-family: 'Manrope', sans-serif; width: 100%;}
+    .attribution a { color: $NeonGreen; }
 
 
 //The responsive is not listening, i don't know why, i think this is the way, 
 //but only the responsive happens in the main id, an only for padding.
 
+
 @media screen and (max-width: 375px) {
-    #main{
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: red;
-
-
-        .card{
-            width: 300px;
-            height: 400px;
-            background-color: red;
-        }
+    .card{
+        width: 300px;
+        margin: 20px;
     }
+    .btn{
+        top: 92%;
+        left: 42.5%;
+    }
+
 }

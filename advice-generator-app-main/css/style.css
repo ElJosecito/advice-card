@@ -1,15 +1,13 @@
-body {
-  height: 100vh;
-}
-body #main {
+#main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(218deg, 23%, 16%);
 }
-body #main .card {
+
+.card {
   width: 26.25rem;
   height: 16.875rem;
   border-radius: 0.9375rem;
@@ -19,8 +17,10 @@ body #main .card {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
+  position: relative;
 }
-body #main .card .advice {
+
+.advice {
   color: hsl(150deg, 100%, 66%);
   font-family: "Manrope", sans-serif;
   margin-top: 1.875rem;
@@ -28,24 +28,27 @@ body #main .card .advice {
   letter-spacing: 0.1875rem;
   margin-bottom: 0;
 }
-body #main .card #paragraph {
+
+#paragraph {
   text-align: center;
   font-size: 1.6875rem;
   font-family: "Manrope", sans-serif;
   color: hsl(193deg, 38%, 86%);
   font-weight: 800;
-  margin-top: 0;
+  margin-top: 20px;
 }
-body #main .card picture {
+
+picture {
   display: flex;
   justify-content: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
-body #main .card picture img {
+picture img {
   width: 100%;
   height: 100%;
 }
-body #main .card #btn {
+
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,37 +57,40 @@ body #main .card #btn {
   border-radius: 50%;
   border-style: none;
   outline: none;
-  position: absolute;
-  z-index: 10;
-  top: 71vh;
   transition: 0.5s ease-in-out;
   background-color: hsl(150deg, 100%, 66%);
+  position: absolute;
+  top: 92%;
+  left: 44.6%;
 }
-body #main .card #btn:hover {
-  box-shadow: 0rem 0rem 1rem -10.875rem rgba(82, 255, 168, 0);
-  -webkit-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82, 255, 168, 0);
-  -moz-box-shadow: 0rem 0rem 1rem -10.875rem rgba(82, 255, 168, 0);
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem 0.625rem rgb(82, 255, 168);
+  -webkit-box-shadow: 0rem 0rem 1rem 0.625rem rgb(82, 255, 168);
+  -moz-box-shadow: 0rem 0rem 1rem 0.625rem rgb(82, 255, 168);
 }
-body .attribution {
-  font-size: 11px;
+
+.attribution {
+  font-size: 0.6875rem;
   text-align: center;
   background-color: hsl(218deg, 23%, 16%);
   color: white;
   font-family: "Manrope", sans-serif;
+  width: 100%;
 }
-body .attribution a {
+
+.attribution a {
   color: hsl(150deg, 100%, 66%);
 }
 
 @media screen and (max-width: 375px) {
-  #main {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: red;
-  }
-  #main .card {
+  .card {
     width: 300px;
-    height: 400px;
-    background-color: red;
+    margin: 20px;
+  }
+  .btn {
+    top: 92%;
+    left: 42.5%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 const advice = document.getElementById("advice_id")
 const paragraph = document.getElementById("paragraph")
-const BTN =  document.getElementById("btn")
+const BTN =  document.getElementsByClassName("btn")
 
 
 BTN = addEventListener("click", function reload(){
